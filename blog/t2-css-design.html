@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Quando&text=walsh9.githubo' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat&text=BLOGPRJECTSABU' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Judson' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>walsh9.github.io</title>
+</head>
+<body>
+    <header>
+        <h1><a href="/">walsh9.github.io</a></h1>
+        <!--<h2>sub title</h2>-->
+    </header>
+    <nav>
+        <ul>
+            <li class="current"><a href="/blog/">Blog</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/about.html">About</a></li>
+        </ul>
+    </nav>
+    <main id="content" class="group">
+        <article>
+            <h3>Inline, Block, and Inline-block</h3>
+            <p>When writing HTML, each element you put on the page stakes out it's own little rectangle of space. Each element also has a special property called <code>display</code>. The <code>display</code> property sets rules for how those little rectangles behave.</p>
+            <p>Two of the most common values for <code>display</code> are <code>block</code> and <code>inline</code>. So what's the difference?
+
+            <h4>Block</h4>
+            <p>Block-level elements are very protective of their personal space. They won't let any other elements share a row with them. They want their own line. They move down to a new row and stake out all the space to the left and right of them, and will even push any following elements down to the next row. Divs like to stack up vertically.</p>
+
+            <p>Some examples of elements that are block-level by default: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;h1&gt;</code>.</p>
+
+            <h4>Inline</h4>
+            <p>Inline elements like to go with the flow. They work a lot like text.  They'll sit next to other inline elements on the same row, and depending on their contents they even wrap around lines. Just a train of rectangles going horizontally across the screen line by line.</p>
+
+            <p>But inline elements are pushovers. They don't like to take up more space than they need to. You can't set a width or height on inline elements.  And you can't adjust top or bottom borders or padding.</p>
+
+            <p>Some examples of elements that are inline by default: <code>&lt;span&gt;</code>, <code>&lt;strong&gt;</code>, and <code>&lt;a&gt;</code>.</p>
+
+            <h4>Inline-block</h4>
+            <p>Inline-block is a special hybrid type of rectangle. It flows like an inline element, but doesn't have any of the sizing, margin, or padding restrictions.
+
+            <h4>A note about positioning</h4>
+            <p>Using floats, fixed positioning, or absolute positioning can affect the layout in ways that seem to override some of the above rules. These positioning methods take the element out of the main page flow, which is one layout universe, and create their own parallel layout universes. It's a bit much to go into depth here, but the layout rules about block elements taking the whole row are only guaranteed for static positioned elements.</p>
+
+            <span class="info">posted on July 20, 2015</span>
+        </article>
+    </main>
+    <footer>
+        <h3>I'm also on:</h3>
+        <ul>
+           <li><a href="https://github.com/walsh9">GitHub</a></li>
+           <li><a href="https://twitter.com/walsh9dbc">Twitter</a></li>
+           <li><a href="https://www.linkedin.com/in/matthewcwalsh">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
