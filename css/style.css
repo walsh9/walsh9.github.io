@@ -59,6 +59,14 @@ nav ul li a:hover, nav ul li a:active {
     text-decoration: none;
     font-size: 120%;
 }
+nav ul li.current a {
+    background-color: #022D4F;
+    color: #EEE6D2;
+}
+nav ul li.current a:hover, nav ul li.current a:active {
+    background-color: #4D50B5;
+}
+
 
 /* main content */
 main {
