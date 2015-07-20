@@ -108,3 +108,30 @@ footer ul li a {
 footer ul li a:hover, footer ul li a:active {
     color: #4D50B5;
 }
+
+/* blog */
+main h3 {
+    font-weight: 400;
+}
+#blogposts ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+}
+#blogposts ul li {
+    
+}
+#blogposts ul li span  {
+    font-size: 86%;
+    display: inline-block;
+    width: 70px;
+    margin-right: 5px;
+}
+#blogposts ul li a {
+    font-size: 120%;
+    text-decoration: none;
+}
+article span.info {
+    font-size: 80%;
+    padding: 3px 0;
+}
