@@ -70,6 +70,7 @@ nav ul li.current a:hover, nav ul li.current a:active {
 
 /* main content */
 main {
+    font-size: 120%;
     max-width: 800px;
     min-height: 16em;
     margin: auto;
