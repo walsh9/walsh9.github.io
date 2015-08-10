@@ -49,14 +49,14 @@
   end
 end</pre>
 
-<p>A lot of stuff is acutally going on here so let's break it down a bit.</p>
+<p>A lot of stuff is actually going on here so let's break it down a bit.</p>
 
 <pre>
 class Monster</pre>
 <p>The <code>class</code> keyword declares the beginning of a class. Our class can be referenced later by its class name, <code>Monster</code>.
 
 <pre>  def initialize(spookiness, spooky_grabber)</pre>
-<p>Here we declare the <code>initialize</code> method. <code>initialize</code> is a special method.</code> Whenever a new instance is of a class created, that class's <code>initialize</code> method is automatically called on that instance. It also recieves all the arguments that were passed to the new method. This is the place to set up your object.</p>
+<p>Here we declare the <code>initialize</code> method. <code>initialize</code> is a special method.</code> Whenever a new instance is of a class created, that class's <code>initialize</code> method is automatically called on that instance. It also receives all the arguments that were passed to the new method. This is the place to set up your object.</p>
 
 <pre>    @spookiness = spookiness
     @spooky_grabber = spooky_grabber</pre>
@@ -93,7 +93,7 @@ We can use these methods to see the values of our instance variables.
 <pre>>>ghost.spookiness
 =>1</pre>
 
-<p>That seems like a lot of code to write just to read each varible. I know what you're thinking. This is Ruby. There's gotta be a shorter way. That's where the <code>attr_reader</code> keyword come into play.</p>
+<p>That seems like a lot of code to write just to read each variable. I know what you're thinking. This is Ruby. There's gotta be a shorter way. That's where the <code>attr_reader</code> keyword come into play.</p>
 
 <pre>class Monster
   attr_reader "spookiness"
