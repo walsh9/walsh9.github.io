@@ -9,6 +9,7 @@
     <title>walsh9.github.io</title>
 </head>
 <body>
+    <div id="page">
     <header>
         <h1><a href="/">walsh9.github.io</a></h1>
         <!--<h2>sub title</h2>-->
@@ -21,58 +22,57 @@
         </ul>
     </nav>
     <main id="content" class="group">
-        <article>
+        <article class="language-ruby">
             <h3>A Spooky Ruby Class</h3>
             
 <p>In Ruby, pretty much everything is an object. The number <code>5</code> is an object. The string "boo!" is an object.  When we want to be able to create a lot of similar objects, we use classes. Classes are objects too.</p>
 
 <p>A class is like a blueprint for something we call instances. Each object you create using a class is called an instance. Ruby has a lot of built-in classes. Let's take a quick look at the <code>String</code> class. To create a new instance of any class, we call the <code>new</code> method. So to create instances of the <code>String</code> class we could type:</p>
 
-<pre>>>greeting = String.new("Hi!")
+<pre><code>>>greeting = String.new("Hi!")
 =>"Hi!"
 >>formal_greeting = String.new("Hello!")
-=>"Hello!"</pre>
+=>"Hello!"</code></pre>
 
 <p>These <code>String</code> instances are each their own objects but they also share a lot of methods that they get from the <code>String</code> class.</p>
 
-<pre>>>greeting.size
+<pre><code>>>greeting.size
 =>3
 >>formal_greeting.size
-=>6</pre>
+=>6</code></pre>
 
 <p>The built-in classes are great and all, but let's try making our own. Let's make a class for spooky monsters.</p>
 
-<pre>class Monster
+<pre><code>class Monster
   def initialize(spookiness, spooky_grabber)
     @spookiness = spookiness
     @spooky_grabber = spooky_grabber
   end
-end</pre>
+end</code></pre>
 
 <p>A lot of stuff is actually going on here so let's break it down a bit.</p>
 
-<pre>
-class Monster</pre>
+<pre><code>class Monster</code></pre>
 <p>The <code>class</code> keyword declares the beginning of a class. Our class can be referenced later by its class name, <code>Monster</code>.
 
-<pre>  def initialize(spookiness, spooky_grabber)</pre>
+<pre><code>  def initialize(spookiness, spooky_grabber)</code></pre>
 <p>Here we declare the <code>initialize</code> method. <code>initialize</code> is a special method.</code> Whenever a new instance is of a class created, that class's <code>initialize</code> method is automatically called on that instance. It also receives all the arguments that were passed to the new method. This is the place to set up your object.</p>
 
-<pre>    @spookiness = spookiness
-    @spooky_grabber = spooky_grabber</pre>
+<pre><code>    @spookiness = spookiness
+    @spooky_grabber = spooky_grabber</code></pre>
 
 <p>Just assigning the parameters to some variables. But what are those @ signs? Those @ signs indicate that these are instance variables. Each instance keeps track of it's own instance variables. Each monster will have it's own individual spookiness and spooky grabber.</p>
 
 <p>Now we can create some instances!</p>
 
-<pre>ghost = Monster.new(1, "a chilling presence")
+<pre><code>ghost = Monster.new(1, "a chilling presence")
 skeleton = Monster.new(2, "a bony claw")
 fishman = Monster.new(2, "a damp webbed hand")
-cthulu = Monster.new(3, "several eldritch tentacles")</pre>
+cthulu = Monster.new(3, "several eldritch tentacles")</code></pre>
 
 <p>The good news is we have our instances. The bad news is, they don't really do much yet. Let's add some methods to our class so we can at least inspect the values we set up.</p>
 
-<pre>class Monster
+<pre><code>class Monster
   def initialize(spookiness, spooky_grabber)
     @spookiness = spookiness
     @spooky_grabber = spooky_grabber
@@ -85,37 +85,35 @@ cthulu = Monster.new(3, "several eldritch tentacles")</pre>
   def spooky_grabber
     @spooky_grabber
   end
-end
-</pre>
+end</code></pre>
 
 We can use these methods to see the values of our instance variables.
 
-<pre>>>ghost.spookiness
-=>1</pre>
+<pre><code>>>ghost.spookiness
+=>1</code></pre>
 
 <p>That seems like a lot of code to write just to read each variable. I know what you're thinking. This is Ruby. There's gotta be a shorter way. That's where the <code>attr_reader</code> keyword come into play.</p>
 
-<pre>class Monster
+<pre><code>class Monster
   attr_reader "spookiness"
-end</pre>
+end</code></pre>
 
 <p>is the same as</p>
 
-<pre>class Monster
+<pre><code>class Monster
   def spookiness
     @spookiness
   end
-end</pre>
+end</code></pre>
 
 <p>Great let's add it to our code.</p>
 
-<pre>
-class Monster
-  attr_reader "spookiness", "spooky_grabber"</pre>
+<pre><code>class Monster
+  attr_reader "spookiness", "spooky_grabber"</code></pre>
 
 <p>And let's add some methods to print spooky text to the console.</p>
 
-<pre>class Monster
+<pre><code>class Monster
   attr_reader "spookiness", "spooky_grabber"
 
   def initialize(spookiness, spooky_grabber)
@@ -132,42 +130,42 @@ class Monster
     print "You suddenly feel #{@spooky_grabber} wrap around your neck"
   puts  "!" * spookiness
   end
-end</pre>
+end</code></pre>
 
 <p>The <code>spook</code> and <code>scare</code> methods are called 'instance methods'. That's because each instance can use them. And when you call an instance method it has access to its caller's instance variables.</p>
 
-<pre>>>ghost.spook
+<pre><code>>>ghost.spook
   You suddenly feel a chilling presence brush your shoulder.
 =>nil
 >>skeleton.scare
   You suddenly feel a bony claw wrap around your neck!!
-=>nil</pre>
+=>nil</code></pre>
 
 <p>Sometimes you have a method that's related to a class, but doesn't really apply to individual instances.  You can create 'class methods' by using the <code>self</code> keyword. Here's an example. Pay attention to how <code>self</code> is used.</p>
 
-<pre>class Monster
+<pre><code>class Monster
   def self.merge (monster_a, monster_b)
     spookiness = monster_a.spookiness + monster_b.spookiness
     grabber = monster_a.spooky_grabber + " and " +  monster_b.spooky_grabber
     Monster.new(spookiness, grabber)
   end
-end</pre>
+end</code></pre>
 
 <p>You call class methods like this:</p>
 
-<pre>spook_team = Monster.merge(fishman, cthulu)</pre>
+<pre><code>spook_team = Monster.merge(fishman, cthulu)</code></pre>
 
 <p>This method combines the properties of two objects then creates and returns a new instance. The created instance also has all the same methods as the other instances.</p>
 
-<pre>>>spook_team.scare
+<pre><code>>>spook_team.scare
   You suddenly feel a damp webbed hand and several eldritch tentacles wrap around your neck!!!!!
-=>nil</pre>
+=>nil</code></pre>
 
 <p>Great, nice and spooky!</p>
 
 <p>And here's the full code for our class.</p>
 
-<pre>class Monster
+<pre><code>class Monster
   attr_reader "spookiness", "spooky_grabber"
 
   def initialize(spookiness, spooky_grabber)
@@ -190,7 +188,7 @@ end</pre>
     grabber = monster_a.spooky_grabber + " and " +  monster_b.spooky_grabber
     Monster.new(spookiness, grabber)
   end
-end</pre>
+end</code></pre>
             <span class="info">posted on August 10, 2015</span>
         </article>
     </main>
@@ -202,5 +200,7 @@ end</pre>
            <li><a href="https://www.linkedin.com/in/matthewcwalsh">LinkedIn</a></li>
         </ul>
     </footer>
+    </div>
+    <script src="../js/prism.js"></script>
 </body>
 </html>

@@ -1,21 +1,35 @@
+/* box sizing fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* body styles */
 body {
     padding: 0;
     margin: 0;
+    background-color: #B1CADA;
+    background-image: url(../i/stripes.png);
+}
+
+#page {
+    max-width: 800px;
     font-family: Judson, sans-serif;
-    background-color: rgb(245, 245, 239);
     color: #303040;
+    margin: 10px auto;
+    -webkit-box-shadow: 0px 5px 20px 1px #222;
+    box-shadow: 0px 5px 20px 1px #222;
 }
 
 /* header */
 header {
-    margin: 0;
-    padding: 30px 20px;
+    padding: 30px 26px;
     width: 100%;
     background: #eeeeee;
-    -webkit-box-shadow: 0px 3px 3px #022D4F;
-    box-shadow: 0px 3px 3px #022D4F;
-    background-color: #022D4F;
+    background-color: rgba(2, 45, 79, 0.75);
+    yborder-bottom: 1px solid #303040;
 }
 h1 {
     font-family: Quando, serif;
@@ -26,17 +40,22 @@ h1 {
 h1 a {
     text-decoration: none;
     color: #EEE6D2;
+    ycolor: #303040;
 }
 
 /* navigation */
 nav {
-    font-family: Verdanad, Montserrat, sans-serif;
+    margin: 0;
+    background-color: rgb(245, 245, 239);
+    font-family: Montserrat, Verdana, sans-serif;
     text-transform: uppercase;
+    padding: 10px 20px;
 }
 nav ul {
     display: block;
     width: 100%;
-    margin: 10px 20px;
+    smargisn: 10px 20px;
+    margin: 0;
     padding: 0;
 }
 nav ul li {
@@ -70,24 +89,27 @@ nav ul li.current a:hover, nav ul li.current a:active {
 
 /* main content */
 main {
+    background-color: rgb(245, 245, 239);
     font-size: 120%;
     max-width: 800px;
-    min-height: 16em;
-    margin: auto;
-    padding: 0px 0;
+    min-height: 50vh;
+    margin: 0px auto;
+    padding: 0px 26px 3em;
     border-top: 1px solid #022D4F;
 }
 main img {
-    max-width: 800px;
-    -webkit-box-shadow: 0px 0px 3px #022D4F;
-    box-shadow: 0px 0px 3px #022D4F;
+    max-width: 748px;
+    -webkit-box-shadow: 0px 0px 3px #222;
+    box-shadow: 0px 0px 3px #222;
 }
 
 /* footer */
 footer {
-    max-width: 800px;
-    margin: auto;
-    padding-top: 3px;
+    background-color: rgb(245, 245, 239);
+    bottom: 0;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px 26px;
     border-top: 1px solid #022D4F;
 }
 footer h3 {
@@ -141,3 +163,145 @@ article span.info {
     font-size: 80%;
     padding: 3px 0;
 }
+
+
+
+/* http://prismjs.com/download.html?themes=prism&languages=clike+ruby */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 86%;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    -webkit-box-shadow: 0px 0px 3px #222;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
+}
+
+.token.punctuation {
+    color: #999;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #a67f59;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #07a;
+}
+
+.token.function {
+    color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #e90;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
