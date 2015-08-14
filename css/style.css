@@ -19,8 +19,6 @@ body {
     font-family: Judson, sans-serif;
     color: #303040;
     margin: 10px auto;
-    min-height: 100vh;
-    position: relative;
     -webkit-box-shadow: 0px 5px 20px 1px #222;
     box-shadow: 0px 5px 20px 1px #222;
 }
@@ -30,7 +28,7 @@ header {
     padding: 30px 26px;
     width: 100%;
     background: #eeeeee;
-    background-color: rgba(2, 45, 79, 0.65);
+    background-color: rgba(2, 45, 79, 0.75);
     yborder-bottom: 1px solid #303040;
 }
 h1 {
@@ -94,7 +92,7 @@ main {
     background-color: rgb(245, 245, 239);
     font-size: 120%;
     max-width: 800px;
-    min-height: 16em;
+    min-height: 50vh;
     margin: 0px auto;
     padding: 0px 26px 3em;
     border-top: 1px solid #022D4F;
@@ -108,7 +106,6 @@ main img {
 /* footer */
 footer {
     background-color: rgb(245, 245, 239);
-    position: absolute;
     bottom: 0;
     width: 800px;
     margin: 0 auto;
