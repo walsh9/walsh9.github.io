@@ -22,7 +22,7 @@
         </ul>
     </nav>
     <main id="content" class="group">
-        <article>
+        <article class="language-ruby">
             <h3>Arrays and Hashes</h3>
 
 
@@ -44,25 +44,25 @@
 </pre>
 
 To create an empty array:
-<pre>
+<pre><code>
 my_array = []
 # or
 my array = Array.new()
-</pre>
+</code></pre>
 To create an array with contents:
-<pre>
+<pre><code>
 my_array = ["Bread", "Eggs", "Milk", "Tea", "Cheez-Its"]
-</pre>
+</code></pre>
 Add items to an array
-<pre>
+<pre><code>
 my_array &lt;&lt; "Cashews"
 # or
 my_array.push("Ice Cream")
-</pre>
+</code></pre>
 Reference items in an array
-<pre>
+<pre><code>
 my_array[3] # Get the item in bucket 3
-</pre>
+</code></pre>
 
 <h4>Hashes</h4>
 <p>Hashes are similar to arrays, but instead of each item being assigned to a numbered bucket, it's assigned a key. What's a key? Well a key can also be any object, but for most cases you would use a string.  It's like an array where you get to name the buckets.</p>
@@ -87,32 +87,32 @@ my_array[3] # Get the item in bucket 3
 </pre>
 
 To create an empty hash:
-<pre>
+<pre><code>
 my_hash = {}
 # or
 my hash = Hash.new()
-</pre>
+</code></pre>
 To create a hash with contents:
-<pre>
+<pre><code>
 my_hash = {
     "Canada" => "Ottowa",
     "Ireland" => "Dublin",
     "France" => "Paris",
     "Tokyo" => "Japan"
 }
-</pre>
+</code></pre>
 Add items to an hash
-<pre>
+<pre><code>
 my_hash["United States"] = "Washington D.C."
 # or
 my_array.store("Germany", "Berlin")
-</pre>
+</code></pre>
 Reference items in an array
-<pre>
+<pre><code>
 my_hash["Canada"] # Get the item from the bucket with the key "Canada"
 # or
 my_hash.fetch("Ireland")
-</pre>
+</code></pre>
 
             <span class="info">posted on July 27, 2015</span>
         </article>
@@ -126,5 +126,6 @@ my_hash.fetch("Ireland")
         </ul>
     </footer>
     </div>
+    <script src="../js/prism.js"></script>
 </body>
 </html>
