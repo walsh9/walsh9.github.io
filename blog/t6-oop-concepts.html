@@ -22,9 +22,81 @@
         </ul>
     </nav>
     <main id="content" class="group">
-        <article>
-            <h3><!--Title--></h3>
-            <!--Post Content-->
+        <article class="language-ruby">
+            <h3>Class Methods and Variables in Ruby</h3>
+<p>Class methods are methods that apply to a particular class in Ruby. Rather than acting on a particular instance of a class, they act on the class blueprint itself, i.e. the instance of the Class object.</p>
+<p>Class methods can't access instance variables. But instance methods can access class variables.</p>
+<p>The most common way to create a class method in Ruby is to use the <code>self</code> keyword.  This refers back to the class object itself.</p>
+<pre><code>
+class IceCream
+  @@total_scoops = 0
+    
+  def self.increment_scoops
+    @@total_scoops +=1
+  end
+    
+  def self.scoops_served
+    @@total_scoops
+  end
+end
+</code></pre>
+<p>In this example, we use the class variable <code>@@scoops</code> to keep track of total ice cream scoops served. If you aren't careful, class variables can cause you problems in Ruby.  Consider the following example.</p>
+<pre><code>
+class FrozenYogurt < IceCream
+  @@total_scoops = 0
+end
+</code></pre>
+<p>What would you expect the output to be when you ran the following code?</p>
+<pre><code>
+puts "Serving ice cream."
+IceCream.increment_scoops
+puts "#{IceCream.scoops_served} scoops of ice cream served."
+
+puts "Serving froyo."
+FrozenYogurt.increment_scoops
+puts "#{FrozenYogurt.scoops_served} scoops of froyo served."
+</code></pre>
+<p>The answer is...</p>
+<pre>
+Serving ice cream.
+1 scoops of ice cream served.
+Serving froyo.
+2 scoops of froyo served.
+</pre>
+<p>In Ruby, classes share class variables with their ancestors. Both of these classes are operating on the same <code>@@scoops variable</code>. This is often not the desired behavior. When you don't want this, you should use what are sometimes called "class instance variables". These are really just instance variables, but they're applied to the instance of the <code>Class</code> class, the blueprint object. You create one by defining an instance variable right in the class body. You can only refer to these variable within class methods. Let's try it.</p>
+<pre><code>
+class IceCream
+  @total_scoops = 0
+  
+  def self.increment_scoops
+    @total_scoops +=1
+  end
+    
+  def self.scoops_served
+    @total_scoops
+  end
+end
+class FrozenYogurt < IceCream
+  @total_scoops = 0
+end
+
+puts "Serving ice cream."
+IceCream.increment_scoops
+puts "#{IceCream.scoops_served} scoops of ice cream served."
+
+puts "Serving froyo."
+FrozenYogurt.increment_scoops
+puts "#{FrozenYogurt.scoops_served} scoops of froyo served."
+</code></pre>
+This code outputs:
+<pre>
+Serving ice cream.
+1 scoops of ice cream served.
+Serving froyo.
+1 scoops of froyo served.
+</pre>
+<p>Now both of our class instances, <code>IceCream</code> and <code>Froyo</code>, each have their own <code>@scoops</code> variable. Remember, classes in Ruby are objects too, specifically instances of the <code>Class</code> class. It's a little confusing but all we are doing here is  adding instance variables to our class instance. This avoids the issue with class variables being inhereted by child classes.</p>
+
             <span class="info">posted on August 17, 2015</span>
         </article>
     </main>
@@ -36,6 +108,7 @@
            <li><a href="https://www.linkedin.com/in/matthewcwalsh">LinkedIn</a></li>
         </ul>
     </footer>
+    <script src="../js/prism.js"></script>
     </div>
 </body>
 </html>
