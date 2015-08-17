@@ -164,6 +164,28 @@ article span.info {
     padding: 3px 0;
 }
 
+/* resume */
+
+.resume h3 {
+    font-size: 120%;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid #022D4F;
+}
+.resume h4 {
+    margin: 5px 0;
+}
+.resume h5, p {
+    font-weight: normal;
+    font-size: 90%;
+    margin: 0 0 0 10px;
+
+}
+.resume ul {
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
 
 
 /* http://prismjs.com/download.html?themes=prism&languages=clike+ruby */
