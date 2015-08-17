@@ -175,7 +175,7 @@ article span.info {
 .resume h4 {
     margin: 5px 0;
 }
-.resume h5, p {
+.resume h5, .resume p {
     font-weight: normal;
     font-size: 90%;
     margin: 0 0 0 10px;
