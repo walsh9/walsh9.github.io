@@ -195,6 +195,10 @@ article span.info {
     padding: 0;
     margin: 0;
 }
+.projects ul a {
+    display: block;
+    font-size: 80%;
+}
 
 /* resume */
 .resume h3 {
