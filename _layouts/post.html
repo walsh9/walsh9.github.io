@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<main id="content" class="group">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+
+    {{ content }}
+
+    <footer class="post-footer">
+        <p class="post-meta">{% if page.date %}Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: '%B %-d, %Y' }}</time>{% endif %}</p>
+    </footer>
+</article>
+</main>
