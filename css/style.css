@@ -27,32 +27,30 @@ a {
 }
 h2 {
     font-weight: normal;
-    font-size: 200%;
+    font-size: 140%;
     margin: 10px 0;
 }
 
 /* header */
-header {
-    padding: 30px 26px;
+header.site-header {
+    padding: 0;
     width: 100%;
     background: #eeeeee;
     background-color: rgba(2, 45, 79, 0.75);
-    yborder-bottom: 1px solid #303040;
 }
-h1 {
+header.site-header h1 {
     font-family: Quando, serif;
     font-weight: 400;
-    padding: 0;
     margin: 0;
+    padding: 30px 26px;
 }
-h1 a {
+header.site-header h1 a {
     text-decoration: none;
     color: #EEE6D2;
-    ycolor: #303040;
 }
 
 /* navigation */
-nav {
+header nav {
     margin: 0;
     background-color: rgb(245, 245, 239);
     font-family: Montserrat, Verdana, sans-serif;
@@ -112,7 +110,7 @@ main img {
 }
 
 /* footer */
-footer {
+footer.site-footer {
     background-color: rgb(245, 245, 239);
     bottom: 0;
     width: 800px;
@@ -120,84 +118,94 @@ footer {
     padding: 10px 26px;
     border-top: 1px solid #022D4F;
 }
-footer h3 {
+footer.site-footer h1 {
+    font-size:18px;
     display: inline;
     padding: 0;
     margin: 0;
 }
-footer ul{
+footer.site-footer ul{
     display: inline;
     width: 100%;
     margin: 0;
     padding: 0;
 }
-footer ul li {
+footer.site-footer ul li {
     list-style: none;
     display: inline-block;
     margin: 0 10px;
 }
-footer ul li a {
+footer.site-footer ul li a {
     color: #022D4F;
     text-decoration: none;
     font-size: 120%;
 }
-footer ul li a:hover, footer ul li a:active {
+footer.site-footer ul li a:hover, footer ul li a:active {
     color: #4D50B5;
 }
 
 /* blog */
-main h3 {
-    font-weight: normal;
-    font-size: 200%;
-    margin: 10px 0;
-}
-#blogposts ul {
+
+.blog-index ul {
     list-style: none;
     display: block;
     padding: 0;
 }
-#blogposts ul li {
+.blog-index ul li {
     
 }
-#blogposts ul li span  {
+.blog-index ul li time  {
     font-size: 86%;
     display: inline-block;
-    width: 70px;
+    width: 80px;
     margin-right: 5px;
 }
-#blogposts ul li a {
+.blog-index ul li a {
     font-size: 120%;
     text-decoration: none;
 }
-article span.info {
+article.post p.post-meta {
     font-size: 80%;
     padding: 3px 0;
 }
+article.post h2 {
+    font-size: 140%;
+}
+article.post h3 {
+    font-size: 130%;
+}
+
+article.page article.post {
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    box-shadow: 0 10px 5px -5px #888, 0 -10px 5px -8px #888;
+}
 
 /* projects */
-.projects img {
-    width: 748px;
-}
-.projects article {
+
+.projects article.project {
     margin: 30px 0;
 }
-.projects article p {
+.projects article.project p {
     margin: 8px 0 20px;
 }
-.projects h3 {
+article.project h1 {
     font-weight: bold;
     font-size: 130%;
     padding: 0;
     margin: 0 0 8px;
 }
-.projects ul {
+article.project ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.projects ul a {
+article.project ul a {
     display: block;
     font-size: 80%;
+}
+article.project img {
+    width: 748px;
 }
 
 /* resume */

@@ -1,39 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href='http://fonts.googleapis.com/css?family=Quando&text=walsh9.githubo' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Montserrat&text=BLOGPRJECTSABU' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Judson' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <title>walsh9.github.io</title>
-</head>
-<body>
-    <div id="page">
-    <header>
-        <h1><a href="/">walsh9.github.io</a></h1>
-        <!--<h2>sub title</h2>-->
-    </header>
-    <nav>
-        <ul>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/projects/">Projects</a></li>
-            <li><a href="/about.html">About</a></li>
-        </ul>
-    </nav>
-    <main id="content" class="group">
-    <p>Hello. Welcome to the GitHub Pages site of Matt Walsh. This is where I keep my assignments for Dev Bootcamp. Maybe more later. Check out the navigation above to look around.</p>
+---
+layout: page
+---
 
-    <p><a href="cheat-sheet.html">Control Structures Cheat Sheet for Ruby and Javascript</a></p>
-    </main>
-    <footer>
-        <h3>I'm also on:</h3>
-        <ul>
-           <li><a href="https://github.com/walsh9">GitHub</a></li>
-           <li><a href="https://twitter.com/walsh9dbc">Twitter</a></li>
-           <li><a href="https://www.linkedin.com/in/matthewcwalsh">LinkedIn</a></li>
-        </ul>
+<h1>Welcome!</h1>
+
+<p>Hello. Welcome to the GitHub Pages site of Matt Walsh. This is where I keep my assignments for Dev Bootcamp. Maybe more later. Check out the navigation above to look around.</p>
+
+<p><a href="cheat-sheet.html">Control Structures Cheat Sheet for Ruby and Javascript</a></p>
+
+<h2>Latest Blog Post</h2>
+{% assign post = site.posts.first %}
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ post.title }}</h1>
+    </header>
+
+    {{ post.content }}
+
+    <footer class="post-footer">
+        <p class="post-meta">{% if post.date %}Posted on <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: '%B %-d, %Y' }}</time>{% endif %}</p>
     </footer>
-    </div>
-</body>
-</html>
+</article>
+
+<p> <a href="/blog/">More posts...</a></p>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
