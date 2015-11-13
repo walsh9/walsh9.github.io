@@ -16,7 +16,7 @@ body {
 
 #page {
     max-width: 800px;
-    font-family: Judson, sans-serif;
+    font-family: Oxygen, sans-serif;
     color: #303040;
     margin: 10px auto;
     -webkit-box-shadow: 0px 5px 20px 1px #222;
@@ -39,7 +39,7 @@ header.site-header {
     background-color: rgba(2, 45, 79, 0.75);
 }
 header.site-header h1 {
-    font-family: Quando, serif;
+    font-family: Oxygen, serif;
     font-weight: 400;
     margin: 0;
     padding: 30px 26px;
@@ -53,7 +53,7 @@ header.site-header h1 a {
 header nav {
     margin: 0;
     background-color: rgb(245, 245, 239);
-    font-family: Montserrat, Verdana, sans-serif;
+    font-family: Oxygen, Verdana, sans-serif;
     text-transform: uppercase;
     padding: 10px 20px;
 }
