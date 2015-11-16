@@ -4,7 +4,8 @@ author: walsh9
 layout: post
 permalink: /uncategorized/7drl-2015-chitinous-crooks-success
 categories:
-  - Uncategorized
+  - projects
+  - games
 ---
 ![Chitinous Crooks Gamplay Screenshot](/i/ss-2015-03-15-at-11.02.02.png)
 

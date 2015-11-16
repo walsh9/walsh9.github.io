@@ -5,9 +5,7 @@ layout: post
 permalink: /projects/7drl-2015-day-5-status-update
 categories:
   - projects
-tags:
-  - 7drl
-  - 7drl2015
+  - games
 ---
 ## The story so far
 
