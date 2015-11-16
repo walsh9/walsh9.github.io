@@ -17,63 +17,66 @@ I was using `.foreach()` to iterate through the tracks. I had to change to a `fo
 
 **No more `.load()` method on text tracks.**
 
-I want videojs to load and parse the subtitles for me without me switching the currently active track. Now, to load up non-active tracks, I need to change the `.mode` property on the track I want to `&#39;hidden&#39;`. The track is then loaded but not displayed. Cool.
+I want videojs to load and parse the subtitles for me without me switching the currently active track. Now, to load up non-active tracks, I need to change the `.mode` property on the track I want to `'hidden'`. The track is then loaded but not displayed. Cool.
 
-**No more `&#39;loaded&#39;` event or `.readyState` property to tell when a track is loaded.**
+**No more `'loaded'` event or `.readyState` property to tell when a track is loaded.**
 
 This part is probably the hackiest workaround. I have to use a `setTimeout()` loop to check that a track's `.activeCues` property isn't `null`. The `.activeCues` property [should be null until the track is loaded][4]. Not ideal but it works, and [video.js itself currently uses something similar to load chapter titles][5].
 
 So here's the old way I used to load text tracks:
 
-    var getTrackAndDoSomething = function(track) {
-    
-        // A function to call when the track is ready. 
-        var doSomethingWithTheTrack = function() {
-            /* do fun stuff with the ready track here */
-        });
-    
-        // .readyState() == 2 means the track is loaded.
-        // If the track isn't loaded...
-        if (track.readyState() !==2) { 
-    
-            // Load the track
-            track.load();
-    
-            // Do stuff when we get the 'loaded' callback.
-            track.on('loaded', doSomethingWithTheTrack);
-    
-        // If the track is loaded, do stuff now.
-        } else {
-           doSomethingWithTheTrack();
-        }
-    };
-    
+```javascript
+var getTrackAndDoSomething = function(track) {
+
+    // A function to call when the track is ready. 
+    var doSomethingWithTheTrack = function() {
+        /* do fun stuff with the ready track here */
+    });
+
+    // .readyState() == 2 means the track is loaded.
+    // If the track isn't loaded...
+    if (track.readyState() !==2) { 
+
+        // Load the track
+        track.load();
+
+        // Do stuff when we get the 'loaded' callback.
+        track.on('loaded', doSomethingWithTheTrack);
+
+    // If the track is loaded, do stuff now.
+    } else {
+       doSomethingWithTheTrack();
+    }
+};
+```
 
 And here's the new way:
 
-    var getTrackAndDoSomething = function(track) {
-    
-        // .activeCues should be null until the track is loaded.
-        // If the track isn't loaded...
-        if (!track.activeCues) { 
-    
-            // don't hide an already showing track.
-            if (track.mode !== 'showing') { 
-    
-                // setting .mode to 'hidden' makes videojs load and parse the track.
-                track.mode = 'hidden';  
-            }
-    
-            // try again until track is loaded.
-            window.setTimeout(function() { 
-                getTrackAndDoSomething(track);
-            }, 100);
-    
-        // If the track is loaded, do stuff now.
-        } else {
-            /* do fun stuff with the ready track here */
+```javascript
+var getTrackAndDoSomething = function(track) {
+
+    // .activeCues should be null until the track is loaded.
+    // If the track isn't loaded...
+    if (!track.activeCues) { 
+
+        // don't hide an already showing track.
+        if (track.mode !== 'showing') { 
+
+            // setting .mode to 'hidden' makes videojs load and parse the track.
+            track.mode = 'hidden';  
         }
-    };
+
+        // try again until track is loaded.
+        window.setTimeout(function() { 
+            getTrackAndDoSomething(track);
+        }, 100);
+
+    // If the track is loaded, do stuff now.
+    } else {
+        /* do fun stuff with the ready track here */
+    }
+};
+```
 
  [1]: https://github.com/walsh9/videojs-transcript
  [2]: https://github.com/videojs/video.js/pull/1749

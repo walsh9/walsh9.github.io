@@ -8,7 +8,7 @@ categories:
 ---
 If you have ASCII art that needs to be programmatically manipulated, but you want to store it in a data file without mangling it too much with weird character escapes, quoting, or unwanted line-breaks, [YAML][1] is great. 
 
-Here&#8217;s an excerpt of the [raw YAML data][2] from [asciibots.js][3]. (This is later transformed into JSON during the build process.) 
+Here's an excerpt of the [raw YAML data][2] from [asciibots.js][3]. (This is later transformed into JSON during the build process.) 
 
 <pre>templates:
  0: |1-
@@ -29,7 +29,7 @@ Here&#8217;s an excerpt of the [raw YAML data][2] from [asciibots.js][3]. (This 
       |_| |_| 
 </pre>
 
-This uses YAML&#8217;s [literal block format][4], indicated with the &#8220;`|`&#8221; character. 
+This uses YAML's [literal block format][4], indicated with the "`|`" character. 
 
 > Inside literal scalars, all (indented) characters are considered to be content, including white space characters. Note that all line break characters are normalized. In addition, empty lines are not folded, though final line breaks and trailing empty lines are chomped.
 > 
@@ -37,12 +37,12 @@ This uses YAML&#8217;s [literal block format][4], indicated with the &#8220;`|`&
 
 No escape characters! Perfect! It pretty much just works but there are few small considerations. 
 
-  1. Unless your ASCII art is perfectly left-aligned, you have to manually specify an [indentation indicator][5]. If you don&#8217;t, automatic indentation detection will fail and you&#8217;ll get errors when trying to parse your YAML. Here I use a &#8220;`1`&#8221; (1 space) but you can use any value you prefer. You also need to indent your ASCII art to the appropriate level relative to the rest of the document.
-  2. You also have to consider whether or not you want to include the trailing line break in your data. In this case I use the &#8220;`-`&#8221; [chomping indicator][6] to request &#8220;stripping&#8221; of the final line break.
+  1. Unless your ASCII art is perfectly left-aligned, you have to manually specify an [indentation indicator][5]. If you don't, automatic indentation detection will fail and you'll get errors when trying to parse your YAML. Here I use a "`1`" (1 space) but you can use any value you prefer. You also need to indent your ASCII art to the appropriate level relative to the rest of the document.
+  2. You also have to consider whether or not you want to include the trailing line break in your data. In this case I use the "`-`" [chomping indicator][6] to request 'stripping' of the final line break.
 
-So that&#8217;s what that &#8220;`|1-`&#8221; means. 
+So that's what that "`|1-`" means. 
 
-The YAML documentation actually has it&#8217;s own [ASCII art example][7] but it uses a sample that doesn&#8217;t require the indentation indicator, so it can be a bit confusing when you just try to drop something else into the example and get parsing errors. Yes my first attempt went like that. Now you don&#8217;t have to make the same mistake I did.
+The YAML documentation actually has it's own [ASCII art example][7] but it uses a sample that doesn't require the indentation indicator, so it can be a bit confusing when you just try to drop something else into the example and get parsing errors. Yes my first attempt went like that. Now you don't have to make the same mistake I did.
 
  [1]: http://www.yaml.org/
  [2]: https://github.com/walsh9/asciibots/blob/master/src/data/asciibots.yml
