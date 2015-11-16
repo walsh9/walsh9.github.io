@@ -2,7 +2,6 @@
 title: Bleep Labs Nebulophone
 author: walsh9
 layout: post
-permalink: /toys/bleep-labs-nebulophone
 categories:
   - toys
 ---

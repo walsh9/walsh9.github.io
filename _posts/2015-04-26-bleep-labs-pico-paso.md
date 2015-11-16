@@ -2,7 +2,6 @@
 title: Bleep Labs Pico Paso
 author: walsh9
 layout: post
-permalink: /toys/bleep-labs-pico-paso
 categories:
   - toys
 ---

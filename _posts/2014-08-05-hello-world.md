@@ -2,7 +2,6 @@
 title: Hello World
 author: walsh9
 layout: post
-permalink: /updates/hello-world
 categories:
   - updates
 ---

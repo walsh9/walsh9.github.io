@@ -2,7 +2,6 @@
 title: Looking back on the development of Super Micro Paint
 author: walsh9
 layout: post
-permalink: /projects/looking-back-on-super-micro-paint
 categories:
   - notes
   - projects

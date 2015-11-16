@@ -2,7 +2,6 @@
 title: Loading text tracks in video.js 4.12
 author: walsh9
 layout: post
-permalink: /projects/loading-text-tracks-in-video-js-4-12
 categories:
   - notes
   - projects

@@ -2,17 +2,10 @@
 layout: page
 ---
 
-<h1>Welcome!</h1>
-
-<p>Hello. Welcome to the GitHub Pages site of Matt Walsh. This is where I keep my assignments for Dev Bootcamp. Maybe more later. Check out the navigation above to look around.</p>
-
-<p><a href="cheat-sheet.html">Control Structures Cheat Sheet for Ruby and Javascript</a></p>
-
-<h2>Latest Blog Post</h2>
-{% assign post = site.posts.first %}
+{% for post in paginator.posts %} 
 <article class="post">
     <header class="post-header">
-        <h1 class="post-title">{{ post.title }}</h1>
+        <h1 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h1>
     </header>
 
     {{ post.content }}
@@ -21,7 +14,35 @@ layout: page
         <p class="post-meta">{% if post.date %}Posted on <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: '%B %-d, %Y' }}</time>{% endif %}</p>
     </footer>
 </article>
+{% endfor %}
 
-<p> <a href="/blog/">More posts...</a></p>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">← Newer</a>
+  {% else %}
+    <span>← Newer</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older →</a>
+  {% else %}
+    <span>Older →</span>
+  {% endif %}
+</div>
+{% endif %}
+
+
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

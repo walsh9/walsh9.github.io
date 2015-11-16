@@ -2,7 +2,6 @@
 title: Mending the Flag
 author: walsh9
 layout: post
-permalink: /fixing-stuff/mending-the-flag
 categories:
   - fixing stuff
 ---

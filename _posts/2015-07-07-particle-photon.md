@@ -2,7 +2,6 @@
 title: Particle Photon
 author: walsh9
 layout: post
-permalink: /toys/particle-photon
 categories:
   - toys
 ---

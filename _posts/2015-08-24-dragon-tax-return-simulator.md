@@ -2,7 +2,6 @@
 title: Dragon Tax Return Simulator 2015
 author: walsh9
 layout: post
-permalink: /projects/dragon-tax-return-simulator
 categories:
   - projects
   - games

@@ -2,7 +2,6 @@
 title: '7DRL 2015 – Chitinous Crooks – Success'
 author: walsh9
 layout: post
-permalink: /uncategorized/7drl-2015-chitinous-crooks-success
 categories:
   - projects
   - games

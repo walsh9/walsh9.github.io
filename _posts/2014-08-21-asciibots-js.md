@@ -2,7 +2,6 @@
 title: asciibots.js
 author: walsh9
 layout: post
-permalink: /projects/asciibots-js
 categories:
   - projects
 ---

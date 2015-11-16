@@ -2,7 +2,6 @@
 title: Dragon Tax Return Simulator 2015 - Post Mortem
 author: walsh9
 layout: post
-permalink: /projects/dragon-tax-return-simulator-post-mortem
 categories:
   - projects
   - games

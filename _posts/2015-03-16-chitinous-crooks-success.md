@@ -2,7 +2,6 @@
 title: 'Chitinous Crooks: Success'
 author: walsh9
 layout: post
-permalink: /projects/chitinous-crooks-success
 categories:
   - projects
   - games

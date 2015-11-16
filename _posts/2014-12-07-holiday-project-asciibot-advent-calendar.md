@@ -2,7 +2,6 @@
 title: 'Holiday Project: ASCIIbot Advent Calendar'
 author: walsh9
 layout: post
-permalink: /projects/holiday-project-asciibot-advent-calendar
 categories:
   - projects
 ---

@@ -1,8 +1,7 @@
 ---
-title: 'Oh by the way&#8230;'
+title: 'Oh by the way...'
 author: walsh9
 layout: post
-permalink: /notes/oh-by-the-way
 categories:
   - notes
 ---

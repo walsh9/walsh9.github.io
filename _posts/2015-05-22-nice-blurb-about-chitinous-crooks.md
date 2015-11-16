@@ -2,7 +2,6 @@
 title: Nice blurb about Chitinous Crooks
 author: walsh9
 layout: post
-permalink: /links/nice-blurb-about-chitinous-crooks
 categories:
   - links
 ---

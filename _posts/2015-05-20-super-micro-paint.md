@@ -2,7 +2,6 @@
 title: Super Micro Paint
 author: walsh9
 layout: post
-permalink: /projects/super-micro-paint
 categories:
   - projects
 ---
