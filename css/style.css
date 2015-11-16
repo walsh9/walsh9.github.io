@@ -502,9 +502,12 @@ header.site-header {
     }
 
     header.site-header h1 a {
-        text-decoration: none;
         color: #333333;
         -webkit-font-smoothing: subpixel-antialiased;
+    }
+    header.site-header h1 a:hover, 
+    header.site-header h1 a:active { 
+        border-bottom: 0 solid rgba(69,69,69,0);
     }
 
     header.site-header h2 {
