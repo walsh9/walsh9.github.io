@@ -626,7 +626,7 @@ footer.site-footer ul li a:active {
 
 article.post {
     width: 100%;
-    margin: 5% auto 10%;
+    margin: 5% auto 0;
     line-height: 1.65;
 }
 
@@ -639,9 +639,6 @@ article.post {
         width: 90%;
         margin: 5% auto 3.5%;
         text-align: center;
-    }
-
-    article.post .post-title {
     }
 
     article.post h1 {
@@ -681,9 +678,57 @@ article.post {
        padding-bottom: 0.5%;
        border-bottom: 1px solid #2100ff;
     }
+
     article.post footer.post-footer a {
         color: #444444;
     }
+
+.pagination {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #2100ff;
+}
+
+.post-nav {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;  
+    border-bottom: 1px solid #2100ff;
+    height: 1.5em;
+}
+
+.post-nav a {
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 50%;
+}
+
+.post-nav a:hover,
+.post-nav a:active {
+  border-bottom: 0 solid rgba(69,69,69,0);
+}
+
+.post-nav a.prev {
+  float: left;
+  text-align: left;
+}
+
+.post-nav a.next {
+  float: right;
+  text-align: right;
+}
+
+.post-nav a.next span {
+    display: inline-block;
+    width: calc(100% - 1.5em);
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 /* projects */
 
@@ -762,7 +807,7 @@ article.project img {
     }
 
     article.post {
-        margin: 2.5% auto 5%;
+        margin: 2.5% auto 0;
     }
 
         article.post header.post-header {
@@ -790,7 +835,7 @@ article.project img {
             font-size: 1.125em;
         }
 
-        article.post footer.post-footer {
+        article.post footer.post-footer, .pagination, .post-nav {
             width: 85%;
         }
 }
