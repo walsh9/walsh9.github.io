@@ -2,9 +2,10 @@
 title: Loading text tracks in video.js 4.12
 author: walsh9
 layout: post
+redirect_from:
+ - /projects/loading-text-tracks-in-video-js-4-12/
 categories:
   - notes
-  - projects
 ---
 I recently updated [videojs-transcript][1], a videojs plugin that automatically generates an interactive transcript from video captions, to work with video.js 4.12.
 

@@ -2,6 +2,8 @@
 title: '7DRL 2015 – Day 5 Status Update'
 author: walsh9
 layout: post
+redirect_from:
+ - /projects/7drl-2015-day-5-status-update/
 categories:
   - projects
   - games

@@ -3,7 +3,6 @@ title: Looking back on the development of Super Micro Paint
 author: walsh9
 layout: post
 categories:
-  - notes
   - projects
 ---
 About a month ago, I finished a minimalist pixel animation web app I was working on called Super Micro Paint. It lets you create 4 frame, 2 color, 32x16 pixel animations really quickly. Then you can turn your creations into gifs that resemble things like LCDs, LEDs, plastic toy blocks, and more. I didn't make any sort of detailed post when I launched it, but here's something now.
