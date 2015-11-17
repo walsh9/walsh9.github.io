@@ -2,7 +2,7 @@
 layout: post
 title:  "Why Accessibility?"
 date:   2015-08-03 09:00:00
-categories: "dbc-culture"
+categories: "programming"
 ---
 
 When designing for the web, it's important to always keep accessibility in mind. Accessibility means making sure your website or application is accessible to everyone. For example, audio content isn't accessible for people with hearing difficulties, but if you add a transcript it can be. Text with low contrast might be less accessible for people with vision trouble, but by increasing the contrast you can make it easier for them read. And so on. The "how" of making accessible web pages is a incredibly broad topic, but what I want to touch on here is the "why".

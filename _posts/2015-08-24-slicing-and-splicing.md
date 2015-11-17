@@ -138,7 +138,7 @@ str.splice(1,1);
 
 Whoops! There's no built-in String.splice method in Javascript. Arrays only!
 
-If you have to switch between Ruby and Javascript a lot, be careful out there and always keep you methods straight.
+If you have to switch between Ruby and Javascript a lot, be careful out there and always keep your methods straight.
 
 And there are more differences than what I mentioned here. Ruby's `slice` methods can take a _range_ value as a parameter. Javascripts `splice` can be used to _insert_ values. And more! Check out the docs for details.
 
