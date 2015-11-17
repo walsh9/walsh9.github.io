@@ -452,6 +452,21 @@ ol, ul {
     margin: 0 0 1.5em 2em;
 }
 
+p {
+    margin-bottom: 1.5em;
+}
+
+pre {
+    background: #eee;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    padding: 1.6em;
+    overflow: auto;
+    max-width: 100%;
+    font-size: 0.9em;
+}
+
 a {
     -webkit-transition: color .4s ease;
     transition: color .4s ease;
@@ -501,12 +516,16 @@ header.site-header {
         margin: 0 0 0.5%;
     }
 
+    article.post header.post-header h1 a,
     header.site-header h1 a {
         color: #333333;
         -webkit-font-smoothing: subpixel-antialiased;
     }
+    article.post header.post-header h1 a:hover,
+    article.post header.post-header h1 a:active,
     header.site-header h1 a:hover, 
     header.site-header h1 a:active { 
+        color: #555555;
         border-bottom: 0 solid rgba(69,69,69,0);
     }
 
@@ -772,8 +791,6 @@ code[class*="language-"],
 pre[class*="language-"] {
     color: black;
     text-shadow: 0 1px white;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    font-size: 0.9em;
     direction: ltr;
     text-align: left;
     white-space: pre;
