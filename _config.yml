@@ -8,6 +8,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://walsh9.github.io" # the base hostname & protocol for your site
 github_username:  walsh9
+linkedin_url:  matthewcwalsh
+google_plus_username: ~
+twitter_username: ~
 
 # Build settings
 markdown: kramdown
@@ -19,3 +22,6 @@ paginate_path: "/:num/"
 permalink: ":categories/:title"
 collections:
   projects:
+
+gems:
+- jekyll-redirect-from

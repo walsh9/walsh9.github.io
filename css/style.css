@@ -456,6 +456,10 @@ p {
     margin-bottom: 1.5em;
 }
 
+strong {
+  font-weight: bold;
+}
+
 pre {
     background: #eee;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -491,7 +495,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #f7f7f7;
-    font: 300 110%/1.5 Oxygen, "Helvetica Neue", Arial, sans-serif;
+    font: 400 110%/1.5 Oxygen, "Helvetica Neue", Arial, sans-serif;
     color: #333333;
 }
 
@@ -548,36 +552,41 @@ main img {
 
 /* footer */
 footer.site-footer {
-    bottom: 0;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 26px;
+  margin: auto;
 }
-footer.site-footer h1 {
-    font-size:18px;
-    display: inline;
-    padding: 0;
-    margin: 0;
+footer.site-footer ul.icon-list {
+  margin: 2% auto 3%;
+  list-style: none;
+  display: block;
+  text-align: center;
 }
-footer.site-footer ul{
-    display: inline;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+footer.site-footer ul.icon-list li {
+  display: inline-block;
 }
-footer.site-footer ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 10px;
+
+footer.site-footer ul.icon-list a {
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  color: #f7f7f7;
+  background-color: #2100ff;
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
 }
-footer.site-footer ul li a {
-    color: #022D4F;
-    text-decoration: none;
-    font-size: 120%;
+
+footer.site-footer ul li a:hover {
+  background-color: #009BCD;
+  outline: 0;
 }
-footer.site-footer ul li a:hover, footer ul li a:active {
-    color: #4D50B5;
+
+footer.site-footer ul li a:active {
+  background-color: #007EA6;
+  outline: 0;
 }
+
+
 
 /* blog */
 
@@ -917,5 +926,56 @@ pre[class*="language-"] {
 
 .token.entity {
     cursor: help;
+}
+
+/* icomoon icons */
+@font-face {
+    font-family: 'icomoon';
+    src:url('/fonts/icomoon.eot?ws5bfo');
+    src:url('/fonts/icomoon.eot?ws5bfo#iefix') format('embedded-opentype'),
+        url('/fonts/icomoon.ttf?ws5bfo') format('truetype'),
+        url('/fonts/icomoon.woff?ws5bfo') format('woff'),
+        url('/fonts/icomoon.svg?ws5bfo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+    content: "\1f426";
+}
+.icon-feed:before {
+    content: "\1f4e1";
+}
+.icon-rss:before {
+    content: "\1f4e1";
+}
+.icon-google-plus:before {
+    content: "\1f4df";
+}
+.icon-envelope:before {
+    content: "\1f4e7";
+}
+.icon-email:before {
+    content: "\1f4e7";
+}
+.icon-linkedin:before {
+    content: "\1f3e2";
+}
+.icon-github:before {
+    content: "\1f4be";
 }
 
