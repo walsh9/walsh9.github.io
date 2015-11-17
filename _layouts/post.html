@@ -10,7 +10,7 @@ layout: default
     {{ content }}
 
     <footer class="post-footer">
-        <p class="post-meta">{% if page.date %}Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: '%B %-d, %Y' }}</time>{% endif %}</p>
+        <div class="post-meta">{% if page.date %}Posted on <a href="{{post.url}}"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: '%B %-d, %Y' }}</time></a>{% endif %}</div>
     </footer>
 </article>
   <div id="post-nav" class="clearfix">

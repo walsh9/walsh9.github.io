@@ -11,7 +11,7 @@ layout: page
     {{ post.content }}
 
     <footer class="post-footer">
-        <p class="post-meta">{% if post.date %}Posted on <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: '%B %-d, %Y' }}</time>{% endif %}</p>
+        <div class="post-meta">{% if post.date %}Posted on <a href="{{post.url}}"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: '%B %-d, %Y' }}</time></a>{% endif %}</div>
     </footer>
 </article>
 {% endfor %}

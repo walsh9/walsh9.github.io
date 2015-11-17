@@ -654,7 +654,7 @@ article.post {
         font-size: 1.125em
     }
 
-    article.post p.post-meta {
+    article.post div.post-meta {
         font-size: 80%;
         padding: 3px 0;
     }
