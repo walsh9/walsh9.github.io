@@ -687,15 +687,19 @@ article.post {
 
 /* projects */
 
-.projects article.project {
-    margin: 30px 0;
+main.projects article.project {
+    width: 100%;
+    margin: 5% auto 10%;
+    line-height: 1.65;
 }
-.projects article.project p {
-    margin: 8px 0 20px;
+
+main.projects header h1.page-title {
+    font-size: 2em;  
 }
+
 article.project h1 {
     font-weight: bold;
-    font-size: 130%;
+    font-size: 1.5em;
     padding: 0;
     margin: 0 0 8px;
 }
@@ -706,10 +710,18 @@ article.project ul {
 }
 article.project ul a {
     display: block;
-    font-size: 80%;
+    font-size: 0.9em;
+    background-color: #f2f2f2;
 }
+
+article.project ul a:hover,
+article.project ul a:active {
+  border-bottom: 0 solid rgba(69,69,69,0);
+  background-color: #f0f0f0;
+}
+
 article.project img {
-    width: 748px;
+    width: 100%;
 }
 
 /* resume */
