@@ -738,7 +738,8 @@ main.projects article.project {
     line-height: 1.65;
 }
 
-main.projects header h1.page-title {
+
+main header h1.page-title {
     font-size: 2em;  
 }
 
