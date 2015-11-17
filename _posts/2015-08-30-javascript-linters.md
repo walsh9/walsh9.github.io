@@ -66,7 +66,7 @@ line 2 column 21, Unused 'greeting'.
 `function helloWorld (greeting) {`
 
 line 4 column 19, Expected ';' and instead saw '}'.
- `console.log(hi)`</pre>
+ `console.log(hi)`
 ```
 
 Douglas Crockford is author of _Javascript: the Good Parts_, has given some [great talks on Javascript](https://www.youtube.com/watch?v=JxAXlJEmNMg&list=PL7664379246A246CB), and in general spends a lot of time thinking, writing, and talking about Javascript. He has very strong opinions on what good Javascript code should look like, and as a result so does JSLint. The official instructions include the warning "JSLint will hurt your feelings." Some of the warnings it gives can be difficult to understand, especially when you are just beginning. Sometimes these rules can seem dogmatic, difficult to adhere to, and arbitrary. Arbitrary they are not. Crockford has thought very carefully on these issues and often explains his reasoning in blog posts and lectures. Even when you don't agree, it's always interesting and informative to learn the reasoning behind Crockford's decisions with JSLint.

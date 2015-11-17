@@ -171,6 +171,7 @@ spook_team = Monster.merge(fishman, cthulu)
 ```
 
 This method combines the properties of two objects then creates and returns a new instance. The created instance also has all the same methods as the other instances.
+
 ```ruby
 spook_team.scare
 #  You suddenly feel a damp webbed hand and several eldritch tentacles wrap around your neck!!!!!

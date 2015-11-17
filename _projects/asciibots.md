@@ -9,8 +9,6 @@ links:
 <pre style="display:inline-block" class="bot"></pre>
 <pre style="display:inline-block" class="bot"></pre>
 <pre style="display:inline-block" class="bot"></pre>
-<pre style="display:inline-block" class="bot"></pre>
-<pre style="display:inline-block" class="bot"></pre>
 <script src="../js/asciibots.min.js"></script>
 <script>
 (function(){

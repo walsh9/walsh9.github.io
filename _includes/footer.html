@@ -1,12 +1,20 @@
 <footer class="site-footer">
-    <h1>I'm also on:</h1>
-    <ul>
+    <ul class="icon-list">
+       {% if site.email  %}
+       <li><a href="mailto:{{ site.email }}"><i class="icon-email"></i></a></li>
+       {% endif %}
+       <li><a href="/feed.xml"><i class="icon-feed"></i></a></li>
        {% if site.github_username  %}
-       <li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
+       <li><a href="https://github.com/{{ site.github_username }}"><i class="icon-github"></i></a></li>
        {% endif %}
        {% if site.twitter_username %}
-       <li><a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a></li>
+       <li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="icon-twitter"></i></a></li>
        {% endif %}
-       <li><a href="https://www.linkedin.com/in/matthewcwalsh">LinkedIn</a></li>
+       {% if site.google_plus_url %}
+       <li><a href="https:/plus.google.com/{{ site.google_plus_url }}"><i class="icon-google-plus"></i></a></li>
+       {% endif %}
+       {% if site.linkedin_url %}
+       <li><a href="https://www.linkedin.com/in/{{ site.linkedin_url }}"><i class="icon-linkedin"></i></a></li>
+       {% endif %}
     </ul>
 </footer>

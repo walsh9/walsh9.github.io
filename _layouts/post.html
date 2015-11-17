@@ -10,7 +10,15 @@ layout: default
     {{ content }}
 
     <footer class="post-footer">
-        <p class="post-meta">{% if page.date %}Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: '%B %-d, %Y' }}</time>{% endif %}</p>
+        <div class="post-meta">{% if page.date %}Posted on <a href="{{post.url}}"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: '%B %-d, %Y' }}</time></a>{% endif %}</div>
     </footer>
 </article>
+  <div class="post-nav">
+    {% if page.previous.url %} 
+      <a class="prev" href="{{page.previous.url}}">← <span>{{page.previous.title}}</span></a> 
+    {% endif %} 
+    {% if page.next.url %} 
+      <a class="next" href="{{page.next.url}}"><span>{{page.next.title}}</span> →</a> 
+    {% endif %} 
+  </div>
 </main>
