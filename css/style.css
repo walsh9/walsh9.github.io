@@ -767,7 +767,7 @@ article.project ul a:active {
 }
 
 article.project img {
-    width: 100%;
+    max-width: 100%;
 }
 
 /* resume */
