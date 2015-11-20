@@ -1,3 +1,3 @@
-# walsh9.github.io
+# walsh9.net
 
-My DBC phase 0 GitHub pages site.
+My personal web site.
