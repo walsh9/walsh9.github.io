@@ -4,7 +4,7 @@ email: walsh9@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Personal web site of Matt Walsh.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://walsh9.net" # the base hostname & protocol for your site
+url: "https://walsh9.net" # the base hostname & protocol for your site
 github_username:  walsh9
 linkedin_url:  matthewcwalsh
 google_plus_username: ~
