@@ -5,6 +5,8 @@ sortorder: 4
 links:
   - title: "Source"
     url: https://github.com/walsh9/asciibots
+  - title: "Blog Post"
+    url: https://walsh9.net/projects/asciibots-js/
 ---
 <pre style="display:inline-block" class="bot"></pre>
 <pre style="display:inline-block" class="bot"></pre>
