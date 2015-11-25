@@ -10,7 +10,7 @@ So, I recently changed this site from a WordPress blog to a GitHub Pages-hosted 
 
 Converting the handful of posts I had to markdown was pretty simple. I used the WordPress [Jekyll Exporter](https://wordpress.org/plugins/jekyll-exporter/) plugin and fixed all my image links by hand. I also set up a few redirects with [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from) for a few posts that had changed urls so they wouldn't break any links.
 
-## Setting up a custom domain with GiHub Pages
+## Setting up a custom domain with GitHub Pages
 
 After that, I had a working Jekyll blog in my GitHub user page repo, `walsh9.github.io`. I wanted this site to be at my `walsh9.net` domain. So I went to my domain name registrar and set up some DNS records according to [GitHub's instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/). I added a CNAME file to my repo with `walsh9.net` in it.  And since I didn't want any subdomains like `www` or `blog`, I set up an A record to pointing to GitHub's servers.
 
