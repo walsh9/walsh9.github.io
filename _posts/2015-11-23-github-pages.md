@@ -31,3 +31,14 @@ Oh, since I'm now using CloudFlare for DNS I can't take advantage of my domain r
 ## So...
 
 I'm pretty happy with my new setup so far.  I know it's a little more dependent on external services now but I can always host a Jekyll-generated site anywhere so I'm not too worried.
+
+## Update: 11/25/2015
+
+Well, I guess during all that moving around something weird happened to all my gh-pages project pages because they were gone. I had to force GitHub to regenerate each site with this dirty trick:
+
+```
+git co gh-pages
+git pull gh-pages
+git commit -m 'rebuild pages' --allow-empty`
+git push gh-pages
+```
