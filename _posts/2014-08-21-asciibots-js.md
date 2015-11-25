@@ -31,3 +31,13 @@ I was thinking about this project recently. I found the code still on my hard dr
  [6]: http://www.masters.me.uk/pocketeers/Htm-Designs/flipflopfaces.htm
  [7]: https://github.com/walsh9/asciibots
  [8]: https://walsh9.github.io/asciibots/
+
+ <script src="/js/asciibots.min.js"></script>
+ <script>
+(function(){
+    var bots = document.querySelectorAll('.bot');
+    for(var i = 0; i < bots.length; i++) {
+        bots[i].textContent = Asciibots.bot();
+    }
+}());
+</script>
