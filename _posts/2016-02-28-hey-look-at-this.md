@@ -23,5 +23,6 @@ That link will take anyone to a page that looks like this:
 
 It's still a work in progress but I'm happy with what it does so far.
 
-You can find it here: [http://walsh9.github.io/hey-look-at-this/](http://walsh9.github.io/hey-look-at-this) 
+You can find it here: [http://walsh9.github.io/hey-look-at-this](http://walsh9.github.io/hey-look-at-this)
+
 Source is here: [https://github.com/walsh9/hey-look-at-this](https://github.com/walsh9/hey-look-at-this) 
