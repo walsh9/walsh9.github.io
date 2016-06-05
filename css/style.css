@@ -557,7 +557,8 @@ main {
     width: 92.5%;
     margin: 0 auto;
 }
-main img {
+main img, 
+main iframe {
     clear: both;
     display: block;
     margin-right: auto;
