@@ -16,6 +16,7 @@ With that done it was time to get ready to hook up the nanoKONTROL2. Now, by def
 
 So now I just had to hook up the values from the sliders and dials to some trees. I used [this excellent library](https://github.com/shokai/korg-nano-kontrol) to do most of the hard work there. And here's the result.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8QnNRrv1Xkk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8QnNRrv1Xkk" frameborder="0" allowfullscreen></iframe>  
 
+  
 If you have a nanoKONTROL or nanoKONTROL2 you can [try it yourself](http://walsh9.github.io/topiary-demos/nanokontrol/index.html) in any browser that supports webMIDI. (please plug in your device before loading the page.)
