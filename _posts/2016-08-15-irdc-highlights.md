@@ -18,7 +18,7 @@ So the other weekend I attended the [2016 International Rogulike Development Con
 
 * And of course meeting new and upcoming roguelike developers and getting to check out some of their cool works-in-progress was awesome.
 
-[Roguelike Celebration](https://roguelike.club/) is coming up on September... The speaker list looks amazing. I really want to go but not sure if making a weekend trip all the way to SF is something that will happen. Might have to settle for watching the live stream. We'll see.
+[Roguelike Celebration](https://roguelike.club/) is coming up in September... The speaker list looks amazing. I really want to go but not sure if making a weekend trip all the way to SF is something that will happen. Might have to settle for watching the live stream. We'll see.
 
 
 
