@@ -1,4 +1,4 @@
-# yoctoPets Postmortem
+# yoctoPets Post-mortem
 
 I recently made a weird virtual pet simulation called [yoctoPets](http://js13kgames.com/entries/yoctopets) for the [js13kgames](http://2016.js13kgames.com/) competition. The theme this year was 'Glitch'. Hera are a few things I learned while making this game.
 
