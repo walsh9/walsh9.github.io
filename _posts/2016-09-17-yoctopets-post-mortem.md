@@ -15,11 +15,11 @@ When I wanted to add a dot-matrix style printer effect, I did some quick Googlin
 
 So to simulate this I took a very straightforward approach and just drew each square yoctoPet pixel as a 4x4 grid of round dots, offsetting the horizontal position of each dot by a tiny random amount to create imperfections. I originally assumed I might have to do more work and this would be a first step, but when I saw the result it just looked great.Okay, I did do a little more work to make the realtime printing effect, but again that was simply drawing the dots row by row and moving the paper just like a real printer would do. And making the ink run out was just a matter of increasing transparency by a tiny amount for each dot printed. Basically I just tried what was obvious instead of looking for clever tricks.
 
-![screenshot of printer results](i/yoctopets_printer.png)
+![screenshot of printer results](/i/yoctopets_printer.png)
 
 In the game, a small melody plays when your pet dies. I guess it shouldn't be surprising, but I was quite pleased that all I had to do was copy the frequencies and durations of the notes off some sheet music and beep them out over the Web Audio API and it sounded like music.
 
-![sheet music for 'shave and a haircut'](i/Shave_and_a_Haircut_in_C.png)
+![sheet music for 'shave and a haircut'](/i/Shave_and_a_Haircut_in_C.png)
 
 => 
 
@@ -50,11 +50,11 @@ var SHAVE_AND_A_HAIRCUT = [
 ## Bitmap fonts are easy
 Had to do a tiny font for the pixel screen and displaying it wasn't much more work than drawing any other tile. Just have to map pixel positions in the graphic to an array of letters instead of using tile indices or tile names.
 
-![yoctopets pixel font](i/yoctopets_font.png)
+![yoctopets pixel font](/i/yoctopets_font.png)
 
 =>
 
-![screenshot of font in action](i/yoctopets_text.png)
+![screenshot of font in action](/i/yoctopets_text.png)
 
 
 ## Google Closure Compiler really is a compiler
@@ -65,6 +65,6 @@ I always just thought of it as a fancy minifier.  But when you turn on those adv
 ## As always, CSS gradients and shadows are fantastic
 Just look at those buttons. Look at that paper.
 
-![screenshot showing off shiny case and crisp paper](i/yoctopets_paper.png)
+![screenshot showing off shiny case and crisp paper](/i/yoctopets_paper.png)
 
 There's more but I don't want to reveal all of the mysteries. Please [check out the game](http://js13kgames.com/entries/yoctopets) and adopt your own yoctoPet today.
