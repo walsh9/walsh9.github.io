@@ -2,7 +2,7 @@
 title: "Dragon Tax Return Simulator 2015"
 image: "projects/dtrs2015.jpg"
 home: https://walsh9.github.io/dragon-taxes/
-sortorder: 6
+sortorder: 3
 links:
   - title: "Source"
     url: https://github.com/walsh9/dragon-taxes
@@ -14,5 +14,5 @@ links:
     url: http://ludumdare.com/compo/2015/08/28/dragon-tax-simulator-2015-post-jam-update
 ---
 
-An HTML5 game where you are a dragon and you need to finish your tax return quickly. 
+An HTML5 game where you are a dragon and you need to finish your tax return quickly.
 Created in 72 hours for [Ludum Dare](http://ludumdare.com/) 33 for the theme "You are the Monster".

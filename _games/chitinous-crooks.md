@@ -2,7 +2,7 @@
 title: "Chitinous Crooks"
 image: "projects/cc.png"
 home: https://walsh9.github.io/7drl2015/
-sortorder: 3
+sortorder: 4
 links:
   - title: "Source"
     url: https://github.com/walsh9/7drl2015
@@ -12,5 +12,5 @@ links:
     url: http://gamestyle.com/feature/7-day-roguelike-jam-2015/
 ---
 
-A roguelike game about retrieving a stolen jewel from lobsterfolk in an underwater fortress. 
+A roguelike game about retrieving a stolen jewel from lobsterfolk in an underwater fortress.
 Made for the 2015 [7DRL Challenge](http://www.roguebasin.com/index.php?title=Seven_Day_Roguelike_Challenge).

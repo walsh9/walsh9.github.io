@@ -20,6 +20,7 @@ paginate_path: "/:num/"
 permalink: ":categories/:title"
 collections:
   projects:
+  games:
 
 gems:
 - jekyll-redirect-from

@@ -515,7 +515,7 @@ header.site-header {
 
     header.site-header h1 {
         font-weight: 300;
-        font-size: 1.95em;        
+        font-size: 1.95em;
         line-height: 1;
         margin: 0 0 0.5%;
     }
@@ -530,8 +530,8 @@ header.site-header {
     header.site-header nav a:active,
     article.post header.post-header h1 a:hover,
     article.post header.post-header h1 a:active,
-    header.site-header h1 a:hover, 
-    header.site-header h1 a:active { 
+    header.site-header h1 a:hover,
+    header.site-header h1 a:active {
         color: #555555;
         border-bottom: 0 solid rgba(69,69,69,0);
     }
@@ -546,10 +546,10 @@ header.site-header {
       width: 100%;
     }
 
-    header.site-header nav a { 
+    header.site-header nav a {
       display: inline-block;
-      width: 33%;
-      text-align: center;      
+      width: 24%;
+      text-align: center;
     }
 
 /* main content */
@@ -557,7 +557,7 @@ main {
     width: 92.5%;
     margin: 0 auto;
 }
-main img, 
+main img,
 main iframe {
     clear: both;
     display: block;
@@ -612,7 +612,7 @@ footer.site-footer ul li a:active {
     padding: 0;
 }
 .blog-index ul li {
-    
+
 }
 .blog-index ul li time  {
     font-size: 86%;
@@ -694,7 +694,7 @@ article.post {
 .post-nav {
     margin: 0 auto;
     width: 100%;
-    text-align: center;  
+    text-align: center;
     border-bottom: 1px solid #2100ff;
     height: 1.5em;
 }
@@ -733,7 +733,8 @@ article.post {
 
 /* projects */
 
-main.projects article.project {
+main.projects article.project,
+main.games article.project{
     width: 100%;
     margin: 5% auto 10%;
     line-height: 1.65;
@@ -741,7 +742,7 @@ main.projects article.project {
 
 
 main header h1.page-title {
-    font-size: 2em;  
+    font-size: 2em;
 }
 
 article.project h1 {
@@ -793,15 +794,15 @@ article.project img {
     padding: 0;
 }
 /* Responsive styles (35em, 50em, 68.5em) */
-@media only screen and (min-width: 35em) { 
+@media only screen and (min-width: 35em) {
     header.site-header, main, footer.site-footer {
-         width:82.5% ;       
+         width:82.5% ;
     }
 }
 
-@media only screen and (min-width: 50em) { 
+@media only screen and (min-width: 50em) {
     header.site-header, main, footer.site-footer {
-         width:80%;    
+         width:80%;
     }
 
     header.site-header h1 {
@@ -853,7 +854,7 @@ article.project img {
 
     header.site-header, main, footer.site-footer {
         width:60%;
-        max-width: 45em;     
+        max-width: 45em;
     }
 
     article.post header.post-header {
