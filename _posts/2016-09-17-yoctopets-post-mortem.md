@@ -1,6 +1,14 @@
-# yoctoPets Post-mortem
+---
+layout: post
+title:  "yoctoPets Post-mortem"
+layout: post
+date: 2016-09-17
+categories:
+  - games
+---
 
 I recently made a weird virtual pet simulation called [yoctoPets](http://js13kgames.com/entries/yoctopets) for the [js13kgames](http://2016.js13kgames.com/) competition. The theme this year was 'Glitch'. Hera are a few things I learned while making this game.
+
 
 ## Naive simulation can have surprisingly good results.
 When I wanted to add a dot-matrix style printer effect, I did some quick Googling to check out how exactly did they work, and particularly what flaws gave dot-matrix printouts their distinctive look. Well, as the name 'dot-matrix' suggests, they print everything out as a grid of dots. One thing that really stuck out was the fact that the alignment of dots from row to row was subject to analog imperfections.
@@ -38,6 +46,7 @@ var SHAVE_AND_A_HAIRCUT = [
 <p data-height="196" data-theme-id="0" data-slug-hash="KgrYwB" data-default-tab="js,result" data-user="walsh9" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/walsh9/pen/KgrYwB/">shave and a haircut</a> by Matt Walsh (<a href="http://codepen.io/walsh9">@walsh9</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
+
 ## Bitmap fonts are easy
 Had to do a tiny font for the pixel screen and displaying it wasn't much more work than drawing any other tile. Just have to map pixel positions in the graphic to an array of letters instead of using tile indices or tile names.
 
@@ -47,9 +56,11 @@ Had to do a tiny font for the pixel screen and displaying it wasn't much more wo
 
 ![screenshot of font in action](i/yoctopets_text.png)
 
+
 ## Google Closure Compiler really is a compiler
 
 I always just thought of it as a fancy minifier.  But when you turn on those advanced optimization features it starts to get really particular about your code really fast.  I didn't have a lot of time and was never that close to the 13k limit, so I didn't get into it too much, just doing the minimal amount of source code annotation to keep Closure Compiler happy.  But it did get me thinking about the possibilities of using it in other projects. Seems good when you want sanity checks on your code beyond what a linter can provide.
+
 
 ## As always, CSS gradients and shadows are fantastic
 Just look at those buttons. Look at that paper.
