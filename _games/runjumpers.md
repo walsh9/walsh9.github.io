@@ -8,6 +8,8 @@ links:
     url: https://github.com/walsh9/runjumpers
   - title: "itch.io Jam Submission Page"
     url: https://itch.io/jam/gbjam-5/rate/90391
+  - title: Post-mortem
+    url: http://walsh9.net/games/runjumpers-post-mortem
 ---
 
 A game about running and jumping.
