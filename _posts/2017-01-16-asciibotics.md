@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Asciibotics Labs"
+title:  "ASCIIbotics Labs"
 layout: post
 date: 2017-01-16
 image: /i/epway.png
