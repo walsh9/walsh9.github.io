@@ -10,7 +10,7 @@ Here are some games I've made.
 {% assign games = site.games | sort: 'sortorder' %}
 {% for game in games %}
 {% if game.font %}
-<link href="http://fonts.googleapis.com/css?family={{ game.font }}&text={{ game.title }}" rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family={{ game.font }}&text={{ game.title }}" rel='stylesheet' type='text/css'>
 {% endif %}
 <article class="game-card">
     <h1 class="game-card__heading" style="font-family: '{{ game.font }}';"><a href="{{ game.home }}">{{ game.title }}</a></h1>
