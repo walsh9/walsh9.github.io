@@ -431,6 +431,9 @@ html {
   box-sizing: border-box;
 }
 
+html {
+  box-sizing: border-box;
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -683,6 +686,123 @@ article.post {
     article.post footer.post-footer a {
         color: #444444;
     }
+
+article.game-card {
+    display: inline-block;
+    margin: 10px;
+    width: 350px;
+    height: 700px;
+    background: #FFA300;
+    color: #000000;
+    vertical-align: top;
+    padding-bottom: 50px;
+    position: relative;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.6)
+}
+
+    article.game-card a {
+        color: #0000dd;
+    }
+
+    .game-card__heading {
+        font-family: "Titan One";
+        font-weight: normal;
+        font-size: 35px;
+        padding: 6px 20px 0;
+        border-radius: 5px 5px 0 0;
+        margin: 0;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    article.game-card .game-card__heading > a {
+        color: #FFF1E8;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        line-height: normal;
+        text-decoration: none;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.4)
+    }
+
+    article.game-card .game-card__heading > a:hover {
+        text-decoration: none;
+        border-bottom: 0px solid;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.2)
+    }
+
+    .game-card__image {
+        width: 320px;
+        height: 262px;
+        object-fit: cover;
+        margin: 15px;
+        padding: 0px;
+        border: 3px solid white;
+        border-radius: 50% / 10%;
+    }
+
+    .game-card__description {
+        padding: 0px 20px;
+        margin: 0;
+    }
+
+    .game-card__description p {
+        margin: 0;
+    }
+
+    .game-card__links {
+        padding: 0px 20px;
+        margin: 0 20px;
+        list-style: none;
+    }
+
+    .game-card__link {
+        position: relative;
+        line-height: 1.5;
+        display: block;
+        color: #2100ff;
+        font-weight: bold;
+    }
+
+    .game-card__link::before {
+        position: absolute;
+        content: "▶";
+        font-size: 12px;
+        line-height: 27px;
+        left: -20px;
+    }
+
+    .game-card__buttons {
+        list-style: none;
+        display: block;
+        padding: 10px 20px 20px;
+        margin: 0;
+        width: 400px;
+        text-align: right;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+    }
+
+    .game-card__button {
+        box-shadow: 2px 2px rgba(0,0,0,0.6);
+        display: inline-block;
+        background: #2100ff;
+        padding: 12px;
+    }
+
+    article.game-card .game-card__button > a {
+        color: #FFF1E8;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    article.game-card .game-card__button > a:hover {
+        color: #FFF1E8;
+        border: none;
+    }
+
 
 .pagination {
     margin: 0 auto;
