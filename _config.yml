@@ -22,6 +22,6 @@ collections:
   projects:
   games:
 
-gems:
+plugins:
 - jekyll-redirect-from
 - jekyll-paginate
