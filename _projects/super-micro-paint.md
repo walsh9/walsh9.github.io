@@ -9,7 +9,7 @@ links:
   - title: "Twitter"
     url: https://twitter.com/supermicropaint
   - title: "Blog post"
-    url: http://walsh9.net/projects/looking-back-on-super-micro-paint
+    url: http://walsh9.online/projects/looking-back-on-super-micro-paint
 ---
 
 A web-based drawing toy for creating little animations super quickly and saving them as gifs. Inspired by the cheap portable LCD toys of the 80s and 90s like Tamagotchi.
