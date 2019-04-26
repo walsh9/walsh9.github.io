@@ -45,7 +45,7 @@ The YAML documentation actually has it's own [ASCII art example][7] but it uses 
 
  [1]: http://www.yaml.org/
  [2]: https://github.com/walsh9/asciibots/blob/master/src/data/asciibots.yml
- [3]: http://walsh9.net/projects/asciibots-js
+ [3]: http://walsh9.online/projects/asciibots-js
  [4]: http://www.yaml.org/spec/1.2/spec.html#id2795688
  [5]: http://www.yaml.org/spec/1.2/spec.html#id2793979
  [6]: http://www.yaml.org/spec/1.2/spec.html#id2794534

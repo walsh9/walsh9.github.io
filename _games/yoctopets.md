@@ -8,7 +8,7 @@ links:
   - title: "js13kgames Entry Page"
     url: http://js13kgames.com/entries/yoctopets
   - title: "Post-mortem"
-    url: https://walsh9.net/games/yoctopets-post-mortem
+    url: https://walsh9.online/games/yoctopets-post-mortem
 actions:
   - title: "View Source"
     url: https://github.com/walsh9/yoctopets
